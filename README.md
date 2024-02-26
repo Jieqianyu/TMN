@@ -54,3 +54,5 @@ python test_all.py --checkpoint ./checkpoints/davis_best.tar --gpu 0
 ```
 
 Additionally, you can modify some setting parameters in `options.py` to change configuration.
+
+## Reproduce by Liming Xu (徐李明) on 2024.1.5
