@@ -37,23 +37,20 @@ DAVIS
       |----db_info.yaml
       |----DAVIS-test-dev (data for DAVIS 2017 test-dev)
 ```
-The `db_info.yaml` contains the meta information of each video sequences and can be found at the davis evaluation [repository](https://github.com/fperazzi/davis-2017/blob/master/data/db_info.yaml).
+The `db_info.yaml` contains the meta information of each video sequence and can be found at the davis evaluation [repository](https://github.com/fperazzi/davis-2017/blob/master/data/db_info.yaml).
 
 ## Training and Testing
 Please change the data root in [`./libs/dataset/data.py`](./libs/dataset/data.py), i.e., `ROOT_YT` and `ROOT_DAVIS`, to the custom path.
 
-To train the TMN network, run following command.
+To train the TMN network, run the following command.
 ```python
 python train_all.py --gpu ${GPU-IDS}
 ```
 
 we provide the [weights](https://drive.google.com/file/d/1q7unH2uQLURvtxs2jjKXjs6SkRqykr-H/view?usp=drive_link) of TMN without pretraining on COCO in the directory `checkpoints`.
-To eval the TMN network on (DAVIS16/17), modify `OPTION.valset`, then run following command
+To eval the TMN network on (DAVIS16/17), modify `OPTION.valset`, then run the following command
 ```python
 python test_all.py --checkpoint ./checkpoints/davis_best.tar --gpu 0
 ```
 
-Additionally, you can modify some setting parameters in `options.py` to change configuration.
-
-## Reproduce by Liming Xu (徐李明) on 2024.1.5
-The code is readable and standardized. The experimental results reached SOTA
+Additionally, you can modify some setting parameters in `options.py` to change the configuration.
