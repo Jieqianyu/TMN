@@ -1,4 +1,4 @@
-# Code for "Fast Real-time Video Object Segmentation wit Tangled Memory Network" (ACM TIST 2023)
+# Fast Real-time Video Object Segmentation with Tangled Memory Network
 
 ## Required Package
 - torch >= 1.6.0
