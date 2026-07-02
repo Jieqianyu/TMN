@@ -47,7 +47,7 @@ To train the TMN network, run following command.
 python train_all.py --gpu ${GPU-IDS}
 ```
 
-we provide the [weights](./checkpoints/davis_best.tar) of TMN without pretraining on COCO in the directory `checkpoints`.
+we provide the [weights](https://drive.google.com/file/d/1q7unH2uQLURvtxs2jjKXjs6SkRqykr-H/view?usp=drive_link) of TMN without pretraining on COCO in the directory `checkpoints`.
 To eval the TMN network on (DAVIS16/17), modify `OPTION.valset`, then run following command
 ```python
 python test_all.py --checkpoint ./checkpoints/davis_best.tar --gpu 0
