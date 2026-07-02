@@ -1,5 +1,7 @@
 # Fast Real-time Video Object Segmentation with Tangled Memory Network
 
+>  [[Paper]](https://dl.acm.org/doi/abs/10.1145/3585076)
+
 ## Required Package
 - torch >= 1.6.0
 - torchvison >= 0.7.0
